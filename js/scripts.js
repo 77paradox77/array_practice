@@ -15,9 +15,21 @@ $("form").submit(function(event) {
   array.push(input1, input2, input3, input4, input5);
   console.log(array);
 
+  var array2 = []
+
+  array2.push(input2, input1, input3);
+  $("#first").text(input2);
+  $("#second").text(input1);
+  $("#third").text(input3);
+  $("#fourth").text(input4);
+  $("#five").text(input5);
+  console.log(array2);
+
+  event.preventDefault();
+
 
 
   // console.log("Yolo");
-  event.preventDefault();
+
   });
 });
